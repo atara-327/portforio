@@ -1,37 +1,61 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="main container">
-    <h1 class="my-5 text-center">atara's PORTFOLIO</h1>
-    <div class="container py-5 text-center border border-white rounded shadow card">
+  <main class="py-5 px-md-5 px-1">
+    <div class="container py-4 pb-5 px-md-5 bg-light text-center border border-white rounded shadow card">
+      <h1 class="text-center mb-3">atara's PORTFOLIO (制作中)</h1>
+
+      <hr />
+
+      <h2 class="mb-3">自己紹介</h2>
+      <div>
+        <p>
+          あたらです。学生です。<br /><br />
+          ゲームが大好きです。MinecraftとかVRChatをよくやります。<br />
+          プログラミングも大好きです。<br />
+          競プロとかCTFにも興味があるので、いつかやってみたいです。
+        </p>
+      </div>
+
+      <h2 class="mt-4 mb-3">リンク</h2>
       <ul class="list-unstyled">
         <li>
-          <i class="bi bi-twitter-x"></i>
-          <a class="link-offset-1" href="https://x.com/atara_0327" target="_blank">@atara_0327</a>
+          <a class="icon-link" href="https://x.com/atara_0327" target="_blank"><i class="bi bi-twitter-x"></i>
+            atara_0327</a>
         </li>
         <li>
-          <i class="bi bi-github"></i>
-          <a class="link-offset-1" href="https://github.com/atara-327" target="_blank">atara-327</a>
+          <a class="icon-link" href="https://github.com/atara-327" target="_blank"><i class="bi bi-github"></i>
+            atara-327</a>
+        </li>
+      </ul>
+
+      <h2 class="mt-4 mb-3">成果物</h2>
+      <ul class="list-unstyled">
+        <li class="mb-1">
+          <a href="https://sia-songs.ataraman.com" target="_blank">依澄しあ
+            歌枠検索</a>
+        </li class="mb-1">
+        <li>
+          <a href="https://vum.ataraman.com" target="_blank">VUM (VRChat
+            unitypackage manager)</a>
         </li>
       </ul>
     </div>
     <br />
-    <ul>
-      <li>
-        <a class="link-offset-1" href="https://sia-song.ataraman.com" target="_blank"
-          >依澄しあ 歌枠検索</a
-        >
-      </li>
-    </ul>
-  </div>
+  </main>
+
+  <footer class="d-flex justify-content-center gap-sm-5 gap-3 fw-light text-nowrap">
+    <p class="my-auto">&copy; 2025 atara-327</p>
+  </footer>
 </template>
 
 <style scoped>
-.card {
-  background-color: inherit;
+a {
+  color: var(--bs-body-text-rgb);
+  text-decoration: none;
 }
-.bi {
-  color: #eaeaea;
-  margin-right: 0.5rem;
+
+a:hover {
+  text-decoration: underline;
 }
 </style>
